@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+  <!-- Uncomment if you want your page to NOT be indexed by search engines: -->
 
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <!-- Uncomment if you want your page to NOT be indexed by search engines: -->
   <!-- <meta name="robots" content="none"> -->
 
 
@@ -106,7 +106,7 @@ d3.json(geoJsonUrl).then(geojson => {
 })
 
 	
-d3.csv("cities-lived.csv", function(data) {
+d3.csv("https://raw.githubusercontent.com/greener98103/twitter.political.messiah/main/cities-lived.csv", function(data) {
 
 svg.selectAll("circle")
 	.data(data)
